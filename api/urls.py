@@ -1,6 +1,12 @@
 from django.urls import path
-from api.views import TestAPIView
+from rest_framework import routers
+from api.views import BlogCategoryViewSet, BlogPostViewSet
 
-urlpatterns = [
-    path('test-api/', TestAPIView.as_view(), name='test'),
-]
+
+router = routers.SimpleRouter()
+router.register('category', BlogCategoryViewSet, basename='category')
+router.register('post', BlogPostViewSet, basename='post')
+
+urlpatterns = []
+
+urlpatterns += router.urls

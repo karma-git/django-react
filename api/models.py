@@ -40,4 +40,3 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return f'post=<{self.title}>,from=<{self.blog_category.id}>'
-

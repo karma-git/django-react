@@ -6,6 +6,9 @@
 
 Список уроков:
 - [#1 Django + React.js | Создание проекта | УРОКИ DJANGO](https://www.youtube.com/watch?v=nJ9BohUzgtM&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=1)
+- [#2 Django + React.js | AXIOS и тестовое API | УРОКИ DJANGO](https://www.youtube.com/watch?v=fJmNnjv7UHk)
+- [#3 Django + React.js | Модели - Manager - QuerySet | УРОКИ DJANGO](https://www.youtube.com/watch?v=jid5IT07qrc)
+- [#4 Django + React.js | Serializer Viewset Router | УРОКИ DJANGO](https://www.youtube.com/watch?v=sHSVlAWCYm8)
 
 #### FT notes
 Создание React приложения:
