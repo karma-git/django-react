@@ -15,3 +15,11 @@ class BlogPostSerializer(serializers.ModelSerializer):
     class Meta:
         model = BlogPost
         fields = '__all__'
+
+class BlogPostListRetrieveSerializer(serializers.ModelSerializer):
+
+    blog_category = BlogCategorySerializer()
+
+    class Meta:
+        model = BlogPost
+        fields = '__all__'
