@@ -15,9 +15,18 @@ class BlogPost(models.Model):
     title = models.CharField(max_length=255, verbose_name='Post name')
     slug = models.SlugField(unique=True)
     content = models.TextField()
-    image = models.ImageField(upload_to='blog_posts/')
+    image = models.ImageField(upload_to='blog_posts/', blank=True, null=True)
     pub_date = models.DateField(auto_now=True)
     in_archive = models.BooleanField(default=False)
 
     def __str__(self):
-        return f'post=<{self.title}>,from=<{blog_category.id}>'
+        return f'post=<{self.title}>,from=<{self.blog_category.id}>'
+
+
+class BlogPostManager(models.Manager):
+
+    def get_queryset(self):
+        return super().get_queryset()
+
+    def all(self):
+        return self.get_queryset().filter(in_archive=False)
