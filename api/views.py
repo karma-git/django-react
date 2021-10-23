@@ -6,7 +6,10 @@ from api.serializers import (
     BlogPostListRetrieveSerializer,
 )
 from api.models import BlogCategory, BlogPost
+from django.shortcuts import render
 
+def index(request):
+    return render(request, 'index.html', {})
 
 class BlogCategoryViewSet(viewsets.ModelViewSet):
 
