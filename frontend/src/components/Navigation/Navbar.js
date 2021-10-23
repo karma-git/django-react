@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -30,7 +31,7 @@ function Navbar() {
         <div class="navbar-nav">
             
             {categories.map(c=>(
-                <a class="nav-link" href="#" key={c.id}>{c.name}</a>
+                <Link className="nav-link" to={{ pathname: `/catergory/${c.id}`, fromDashboard:false }}>{c.name}</Link>
             ))}
             
         </div>
