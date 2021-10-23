@@ -9,6 +9,7 @@
 - [#2 Django + React.js | AXIOS и тестовое API | УРОКИ DJANGO](https://www.youtube.com/watch?v=fJmNnjv7UHk)
 - [#3 Django + React.js | Модели - Manager - QuerySet | УРОКИ DJANGO](https://www.youtube.com/watch?v=jid5IT07qrc)
 - [#4 Django + React.js | Serializer Viewset Router | УРОКИ DJANGO](https://www.youtube.com/watch?v=sHSVlAWCYm8)
+- [#5 Django + React.js | POST PUT DELETE - Создание, изменение и удаление объекта | УРОКИ DJANGO](https://www.youtube.com/watch?v=pl88x9b-VTo)
 
 #### FT notes
 Создание React приложения:

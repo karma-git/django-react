@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "3e106fef-3041-4490-9028-bd3777f9b1f6",
+		"name": "django+react",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "category_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/category/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"category",
+						""
+					]
+				},
+				"description": "List all code snippets, or create a new snippet."
+			},
+			"response": []
+		},
+		{
+			"name": "category_create(post)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Urbanistics\",\n    \"slug\": \"Urbanistics\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/category/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"category",
+						""
+					]
+				},
+				"description": "List all code snippets, or create a new snippet."
+			},
+			"response": []
+		},
+		{
+			"name": "category_edit(put)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Урбанистика\",\n    \"slug\": \"Urbanistics\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/category/4/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"category",
+						"4",
+						""
+					]
+				},
+				"description": "List all code snippets, or create a new snippet."
+			},
+			"response": []
+		},
+		{
+			"name": "category_delete(delete)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/api/category/4/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"category",
+						"4",
+						""
+					]
+				},
+				"description": "List all code snippets, or create a new snippet."
+			},
+			"response": []
+		},
+		{
+			"name": "post_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/post/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"post",
+						""
+					]
+				},
+				"description": "List all code snippets, or create a new snippet."
+			},
+			"response": []
+		}
+	]
+}
