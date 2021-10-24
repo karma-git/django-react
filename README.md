@@ -5,16 +5,16 @@
 [YouTube курс](https://www.youtube.com/playlist?list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7)
 
 Список уроков:
-- [#1 Django + React.js | Создание проекта | УРОКИ DJANGO](https://www.youtube.com/watch?v=nJ9BohUzgtM&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=1)
-- [#2 Django + React.js | AXIOS и тестовое API | УРОКИ DJANGO](https://www.youtube.com/watch?v=fJmNnjv7UHk)
-- [#3 Django + React.js | Модели - Manager - QuerySet | УРОКИ DJANGO](https://www.youtube.com/watch?v=jid5IT07qrc)
-- [#4 Django + React.js | Serializer Viewset Router | УРОКИ DJANGO](https://www.youtube.com/watch?v=sHSVlAWCYm8)
-- [#5 Django + React.js | POST PUT DELETE - Создание, изменение и удаление объекта | УРОКИ DJANGO](https://www.youtube.com/watch?v=pl88x9b-VTo)
-- [#6 Django + React.js | Navbar + views.py serializers.py рефакторинг| УРОКИ DJANGO](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=6)
-- [#7 Django + React.js | Категории в Navbar с useEffect | УРОКИ DJANGO](https://www.youtube.com/watch?v=i2SzLtHwWGY&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=7)
-- [#8 Django + React.js | Немного про React Router Dom | УРОКИ DJANGO](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=8)
-
-TODO - update readme
+- [#1 Создание проекта](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=1)
+- [#2 AXIOS и тестовое API](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=2)
+- [#3 Модели - Manager - QuerySet](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=3)
+- [#4 Serializer Viewset Router](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=4)
+- [#5 POST PUT DELETE - Создание, изменение и удаление объекта](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=5)
+- [#6 Navbar + views.py serializers.py рефакторин](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=6)
+- [#7 Категории в Navbar с useEffect](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=7)
+- [#8 Немного про React Router Dom](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=8)
+- [#9 React Router Dom и match в компоненте](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=9)
+- [#10 PostDetail и список постов в категории](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=10)
 
 #### FT notes
 Создание React приложения:
