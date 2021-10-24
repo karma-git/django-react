@@ -12,7 +12,7 @@ function Navbar() {
     useEffect( () => {
     axios({
         method: "GET",
-        url: "http://127.0.0.1:8000/api/category/"
+        url: "http://0.0.0.0:8080/api/category/"
     }).then(responce => {
         setCategories(responce.data)
     })

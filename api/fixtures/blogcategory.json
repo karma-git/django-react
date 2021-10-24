@@ -1,0 +1,6 @@
+[
+    {"model": "api.blogcategory", "pk": 1, "fields": {"name": "it", "slug": "ithappens"}}, 
+    {"model": "api.blogcategory", "pk": 2, "fields": {"name": "travel", "slug": "travel"}}, 
+    {"model": "api.blogcategory", "pk": 3, "fields": {"name": "content_creation", "slug": "content_creation"}}, 
+    {"model": "api.blogcategory", "pk": 4, "fields": {"name": "Урбанистика", "slug": "Urbanistics"}}
+]

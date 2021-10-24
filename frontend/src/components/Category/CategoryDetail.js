@@ -11,7 +11,7 @@ function CategoryDetail({ match }) {
     useEffect( () => {
         axios({
             method: "GET",
-            url: `http://127.0.0.1:8000/api/category/${id}/`
+            url: `http://0.0.0.0:8080/api/category/${id}/`
         }).then(responce => {
             setCategory(responce.data)
             setPosts(responce.data.post)
