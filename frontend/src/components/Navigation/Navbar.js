@@ -31,7 +31,7 @@ function Navbar() {
         <div class="navbar-nav">
             
             {categories.map(c=>(
-                <Link className="nav-link" to={{ pathname: `/catergory/${c.id}`, fromDashboard:false }}>{c.name}</Link>
+                <Link className="nav-link" to={{ pathname: `/category/${c.id}`, fromDashboard:false }}>{c.name}</Link>
             ))}
             
         </div>
