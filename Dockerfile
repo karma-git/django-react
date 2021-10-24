@@ -12,16 +12,7 @@ RUN apk add --no-cache \
     py3-pip~=20.3.4 \
     nodejs \
     npm \
-  && apk add --virtual build-deps \
-    gcc \
-    python3-dev \
-    musl-dev \
-    postgresql \
-    postgresql-dev \
-  && pip install psycopg2 \
-  && apk add jpeg-dev zlib-dev libjpeg \
   && pip install --no-cache-dir -r requirements.txt \
-  && apk del build-deps \
   && npm install
 
 RUN addgroup --gid 1000 app \

@@ -2,18 +2,18 @@
     {"model": "api.blogpost", "pk": 1, "fields": 
         {"blog_category": 1, "title": "Django", "slug": "Django1", 
             "content": "Django REST framework is a powerful and flexible toolkit for building Web APIs.\r\nhttps://www.django-rest-framework.org/", 
-            "image": "", "pub_date": "2021-10-24", "in_archive": false}}, 
+            "pub_date": "2021-10-24", "in_archive": false}}, 
     {"model": "api.blogpost", "pk": 2, "fields": 
         {"blog_category": 1, "title": "K8s", "slug": "kubernetes", 
-            "content": "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.\r\nhttps://kubernetes.io/docs/concepts/overview/what-is-kubernetes/", "image": "", "pub_date": "2021-10-24", "in_archive": false}}, 
+            "content": "Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.\r\nhttps://kubernetes.io/docs/concepts/overview/what-is-kubernetes/", "pub_date": "2021-10-24", "in_archive": false}}, 
     {"model": "api.blogpost", "pk": 3, "fields": {"blog_category": 1, "title": "windiows", "slug": "windows", 
         "content": "https://ru.wikipedia.org/wiki/Windows_11", 
-        "image": "", "pub_date": "2021-10-24", "in_archive": true}}, 
+        "pub_date": "2021-10-24", "in_archive": true}}, 
     {"model": "api.blogpost", "pk": 4, "fields": {"blog_category": 2, "title": "spb", "slug": "spb", 
         "content": "https://en.wikipedia.org/wiki/Saint_Petersburg", 
-        "image": "", "pub_date": "2021-10-24", "in_archive": false}}, 
+        "pub_date": "2021-10-24", "in_archive": false}}, 
     {"model": "api.blogpost", "pk": 5, "fields": 
         {"blog_category": 3, "title": "tito", "slug": "tito", 
-            "content": "parrot", "image": 
-            "", "pub_date": "2021-10-24", "in_archive": false}}
+            "content": "parrot", 
+            "pub_date": "2021-10-24", "in_archive": false}}
         ]
