@@ -20,5 +20,6 @@ import api.views as views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('category/<int:id>/', views.category_detail),
     path('api/', include('api.urls')),
 ]
