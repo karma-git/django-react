@@ -2,6 +2,11 @@
 
 [SPA - single-page application](https://en.wikipedia.org/wiki/Single-page_application) (при изменении страниц контент не перезегружается).
 
+Реализация SPA с помощью django rest framework в качестве бэка и react.js в качестве фронта.
+
+<details>
+<summary>YouTube курс</summary>
+
 [YouTube курс](https://www.youtube.com/playlist?list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7)
 
 Список уроков:
@@ -16,30 +21,48 @@
 - [#9 React Router Dom и match в компоненте](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=9)
 - [#10 PostDetail и список постов в категории](https://www.youtube.com/watch?v=L2ZT9Y01Lcg&list=PLodoqt_ESP4ubldFsx_1kBrFr3RLNN7I7&index=10)
 
-#### FT notes
-Создание React приложения:
+</details>
+
+### Локальная установка
+
+Требования:
+- python3
+- pip
+- virtualenv
+- nodejs
+- npm
+
 ```bash
-npx create-react-app frontend
+# Создаем виртуальное окружение
+python3 -m venv venv
+# Активируем
+source venv/bin/activate
+# Устанавливаем питоновские зависимости
+pip install -r requirements.txt
+# Устанавливаем js зависимости и собираем js часть
+cd ./frontend
+npm install
+npm run build
+cd ..
+# Создаем необходимые таблицы в бд
+python manage.py migrate
+# Забираем статику котороую собрал react
+python manage.py collectstatic
+# Загрузим фикстуры
+sh _restore.sh
+# Создадим пользователя для админки
+python manage.py shell -c \
+    "from django.contrib.auth.models import User; import os; \
+    User.objects.create_superuser('admin', 'admin@example.com', os.environ.get('SU_PW', '123456'))"
+# запустим сервер
+python manage.py runserver 0.0.0.0:8080
 ```
-
+### Запуск с помощью docker
+Сборка:
 ```bash
-Inside that directory, you can run several commands:
-
-  npm start
-    Starts the development server.
-
-  npm run build
-    Bundles the app into static files for production.
-
-  npm test
-    Starts the test runner.
-
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-
-  cd frontend
-  npm start
+docker build -t dr:1.0 --build-arg SU_PW=123456 .
+```
+Запуск:
+```bash
+docker run -d -p 8080:8080 dr:1.0
 ```
