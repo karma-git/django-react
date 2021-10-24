@@ -5,7 +5,7 @@ from api.views import BlogCategoryViewSet, BlogPostViewSet
 
 router = routers.SimpleRouter()
 router.register('category', BlogCategoryViewSet, basename='category')
-router.register('post', BlogPostViewSet, basename='post')
+router.register('blogpost', BlogPostViewSet, basename='blogpost')
 
 urlpatterns = []
 
