@@ -32,15 +32,15 @@ WORKDIR /home/app
 # USER app
 
 RUN python3 manage.py migrate \
-  && python3 manage.py shell -c \
-    "from django.contrib.auth.models import User; import os; \
-    User.objects.create_superuser('admin', 'admin@example.com', os.environ['SU_PW'])" \
   && cd ./frontend \
   && npm run build \
   && cd .. \
   && python3 manage.py collectstatic \
   # LOAD FIXTURES
-  && sh _restore.sh
+  && sh _restore.sh \
+  && python3 manage.py shell -c \
+  "from django.contrib.auth.models import User; import os; \
+  User.objects.create_superuser('admin', 'admin@example.com', os.environ['SU_PW'])"
 
 EXPOSE 8080
 
